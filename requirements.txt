@@ -1,0 +1,4 @@
+django
+python-environ
+parameterized
+redis
