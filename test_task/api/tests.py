@@ -1,10 +1,9 @@
 import time
 import unittest
 
+from api.views import clean_links, remove_not_unique
 from django.test import Client
 from parameterized import parameterized
-
-from api.views import clean_links, remove_not_unique
 
 POST_URL = '/visited_links'
 GET_URL = '/visited_domains'
