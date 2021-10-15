@@ -1,15 +1,11 @@
 import json
 import re
 import time
-
 from urllib.parse import urlparse
 
 import redis
-from django.http import (
-    HttpResponseNotFound,
-    HttpResponseBadRequest,
-    JsonResponse,
-)
+from django.http import (HttpResponseBadRequest, HttpResponseNotFound,
+                         JsonResponse)
 from django.views.decorators.csrf import csrf_exempt
 
 from test_task.settings import REDIS_HOST, REDIS_PORT
