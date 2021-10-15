@@ -2,7 +2,6 @@ import time
 import unittest
 
 from django.test import Client
-
 from parameterized import parameterized
 
 from api.views import clean_links, remove_not_unique
