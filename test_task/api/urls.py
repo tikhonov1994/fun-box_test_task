@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import save_links, get_domains
+
+from .views import get_domains, save_links
 
 urlpatterns = [
     path('visited_links', save_links),
